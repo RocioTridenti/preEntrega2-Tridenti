@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Geologica', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color:#e6e6e6;
+}
+
+/** footer **/
+.footer-box p{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.footer-box img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    transform: translateX(830px);
+}
+
+/**index**/
+.tittle {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+.tittle{
+    font-size: 100px;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+}
+
+
+.container-box{
+   width: 90%;
+    display: grid;
+    grid-template-columns:repeat(4, 300px);
+    grid-auto-rows: 300px;
+    justify-content: center;
+    margin: auto;
+    
+    }
+
+.container-box img {
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    transform: translateX(-150px);  
+    border-radius: 50%;
+    margin: 10px;
+}
+/**header **/
+.header {
+    background-color: #a5a5a5;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 85px;
+}
+
+.header .logo {
+    height: 200px;
+    width: 350px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header .logo:hover {
+    transform: scale(0.7);
+}
+
+.header .nav-box ul {
+    list-style: none;
+}
+
+.header .nav-box li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-box li:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-box a {
+    font-size: 400;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .nav-box li a:hover {
+    color: #8C4303;
+
+}
+
+
+/**inspo**/
+.tittle__inspo {
+    font-size: 50px;
+    text-align: center;
+    color: #8C4303;
+}
+
+.inspo-box {
+    display: grid;
+    grid-template-columns:repeat(4, 300px);
+    grid-auto-rows: 300px;
+    justify-content:center;
+    object-fit: cover;
+    gap: 1rem;
+
+
+}
+
+.inspo-box a img { 
+transform: translateX(-120px);
+width: 300px;
+height: 300px;
+}
+
+.inspo-box a img:hover {
+    filter: brightness(0.7);
+}
+
+/**trabajos**/
+
+img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.title__gallery {
+    text-align: center;
+    padding: 2.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    font-size: 2.4rem;
+
+}
+.gallery{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, 200px);
+    grid-auto-rows: 190px;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery__item {
+    justify-content: center;
+    margin-top: 20px;
+}
+.gallery__item img{
+    width: 150px;
+    transition: all 0.3s;
+
+
+}
+
+.gallery__item:hover {
+    filter: brightness(0.7);
+    transform: scale(1.6);
+}
+
+
+/**historia**/
+.history-box {
+    margin: 15px;
+    padding: 0;
+    align-content: center;
+    width: 85%;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 40px;
+    font-weight:900;
+    text-decoration:underline;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 20px;
+    transform: translateX(20px);
+    font-weight: 900;
+}
+
+.contenido {
+    text-align: center;
+    transform: translateX(20px);
+}
+
+.history1 {
+    width: 600px;
+    height: 600px;
+    border-radius: 60%;
+    transform: translateX(300px);
+}
+
+/**contacto**/
+
+.sobremi img{
+    display: inline-flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px; 
+    justify-content: center;
+    align-items: center;
+    transform: translateX(900px);
+}
+
+.sobremi p {
+    display: inline;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.contact-box {
+    background-color: #00000024;
+    width: 600px;
+    height:370px;
+    display: flex-box;
+    align-content: center;
+    justify-content: center;
+    margin-left: 300px;
+    border-radius: 5%;
+
+
+}
+.contact-box p {
+    
+    text-align: center;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  
+
+}
+
+.contact-box input {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 190px;
+   
+}
+
+.contact-box textarea { 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 190px;
+}
+
+.contact-box button { 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 330px;
+    font-size: 20px;
+    background-color:#ffffff7b;
+    color:#8C4303;
+    border:0;
+    border-radius: 10%;
+}
